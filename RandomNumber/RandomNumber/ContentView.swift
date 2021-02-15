@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var numero = 0
-    @State private var digitos = 2
+    @State private var numero = 123
+    @State private var digitos = 3
 
     var body: some View {
 
