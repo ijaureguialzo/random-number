@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var numero = 0
     @State private var digitos = 1
 
+    let minDigitos = 1
+    let maxDigitos = 16
+
     var body: some View {
 
         VStack {
@@ -30,7 +33,7 @@ struct ContentView: View {
                 aleatorio()
             }
 
-            Stepper("Dígitos", value: $digitos, in: 1...10)
+            Stepper("Dígitos", value: $digitos, in: minDigitos...maxDigitos)
                 .labelsHidden()
                 .padding()
 
