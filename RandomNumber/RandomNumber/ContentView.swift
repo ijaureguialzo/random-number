@@ -16,7 +16,7 @@ struct ContentView: View {
 
         VStack {
 
-            Text(String(numero))
+            Text(String(format: "%ld", locale: Locale.current, numero))
                 .padding(30)
                 .frame(width: 300, height: 300, alignment: .center)
                 .background(Color("AccentColor"))
