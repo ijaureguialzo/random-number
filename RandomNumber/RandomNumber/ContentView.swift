@@ -19,7 +19,7 @@ struct ContentView: View {
             Text(String(numero))
                 .padding(30)
                 .frame(width: 300, height: 300, alignment: .center)
-                .background(Color.black)
+                .background(Color("AccentColor"))
                 .clipShape(Circle())
                 .foregroundColor(Color.white)
                 .font(.system(size: 200))
