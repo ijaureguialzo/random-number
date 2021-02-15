@@ -47,7 +47,14 @@ struct ContentView: View {
     }
 
     func aleatorio() {
-        numero = Int.random(in: Int(pow(Double(10), Double(digitos - 1)))..<Int(pow(Double(10), Double(digitos))))
+
+        var aleatorio = 0
+
+        repeat {
+            aleatorio = Int.random(in: Int(pow(Double(10), Double(digitos - 1)))..<Int(pow(Double(10), Double(digitos))))
+        } while aleatorio == numero
+
+        numero = aleatorio
     }
 }
 
